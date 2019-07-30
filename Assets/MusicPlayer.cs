@@ -15,7 +15,9 @@ public class MusicPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke(nameof(LoadFirstScene), SPLASH_DELAY);
+        if (SceneManager.GetActiveScene().buildIndex == 0) {
+            Invoke(nameof(LoadFirstScene), SPLASH_DELAY);
+        }
     }
 
     void LoadFirstScene()
