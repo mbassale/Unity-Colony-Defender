@@ -4,16 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     const string HORIZONTAL = "Horizontal";
     const string VERTICAL = "Vertical";
 
+    [Header("General")]
     [Tooltip("In m/s")][SerializeField] float xSpeed = 15f;
     [Tooltip("In m")] [SerializeField] float xRange = 15f;
     [Tooltip("In m/s")] [SerializeField] float ySpeed = 15f;
     [Tooltip("In m")] [SerializeField] float yRange = 8f;
 
+    [Header("Position and Control Throw")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float controlPitchFactor = -10f;
     [SerializeField] float positionYawFactor = 4.2f;
@@ -21,6 +23,7 @@ public class Player : MonoBehaviour
     [SerializeField] float controlRollFactor = -30f;
 
     private float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +34,16 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
+    }
+
+    void OnPlayerDeath()
+    {
+        isControlEnabled = false;
     }
 
     private void ProcessRotation()
