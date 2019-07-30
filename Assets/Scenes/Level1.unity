@@ -245,6 +245,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4973280458501825407, guid: c36d634bc85312a4dbcb067c33bf3887, type: 3}
+  parent: {fileID: 611372184}
+--- !u!1 &611372183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611372184}
+  m_Layer: 0
+  m_Name: SpawnAtRuntime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &611372184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611372183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686457616
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4973280458501825407, guid: c36d634bc85312a4dbcb067c33bf3887, type: 3}
+  parent: {fileID: 611372184}
 --- !u!1 &822925955
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4973280458501825407, guid: c36d634bc85312a4dbcb067c33bf3887, type: 3}
+  parent: {fileID: 611372184}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,6 +1183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4973280458501825407, guid: c36d634bc85312a4dbcb067c33bf3887, type: 3}
+  parent: {fileID: 611372184}
 --- !u!1001 &1801482402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1244,6 +1278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4973280458501825407, guid: c36d634bc85312a4dbcb067c33bf3887, type: 3}
+  parent: {fileID: 611372184}
 --- !u!1001 &2039224013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1338,6 +1373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4973280458501825407, guid: c36d634bc85312a4dbcb067c33bf3887, type: 3}
+  parent: {fileID: 611372184}
 --- !u!1 &2073833549
 GameObject:
   m_ObjectHideFlags: 0
