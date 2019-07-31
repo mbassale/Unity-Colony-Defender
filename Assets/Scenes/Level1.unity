@@ -885,42 +885,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 406995548, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 406995548, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 406995548, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 406995548, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.collisionMessages
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944116637, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944116637, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944116637, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.collisionMessages
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944116637, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1944116637, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
-      propertyPath: CollisionModule.collisionMode
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb80d574ec67a7c4e8ef1a14a65990f6, type: 3}
 --- !u!1 &1078828725

@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In m")] [SerializeField] float xRange = 15f;
     [Tooltip("In m/s")] [SerializeField] float ySpeed = 15f;
     [Tooltip("In m")] [SerializeField] float yRange = 8f;
+    [SerializeField] GameObject[] guns;
 
     [Header("Position and Control Throw")]
     [SerializeField] float positionPitchFactor = -5f;
@@ -38,12 +39,31 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
     void OnPlayerDeath()
     {
         isControlEnabled = false;
+    }
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Jump"))
+        {
+            foreach (GameObject gun in guns)
+            {
+                gun.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (GameObject gun in guns)
+            {
+                gun.SetActive(false);
+            }
+        }
     }
 
     private void ProcessRotation()
